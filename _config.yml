@@ -14,5 +14,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Origami to Computer Science, and everything in between
 url: "http://psturmfels.github.io" # the base hostname & protocol for your site
 
+keep_files: ['_images']
+include: ['_images']
+
 # Build settings
 markdown: kramdown
