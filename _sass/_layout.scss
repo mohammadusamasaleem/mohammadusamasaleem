@@ -151,8 +151,16 @@
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    margin-left: 0 auto;
     @extend %clearfix;
+
+}
+
+@include media-query($on-palm) {
+    .footer-disappear {
+        clear: both;
+        display: none;
+    }
 }
 
 .footer-col {
