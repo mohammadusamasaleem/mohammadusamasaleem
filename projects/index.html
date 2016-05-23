@@ -4,8 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
-{% for my_page in site.pages %}
-    {% if my_page.title %}
-        {{ my_page.title }} <br>
+{% for project in site.posts %}
+    {% if project.title %}
+        {{ project }} <br>
     {% endif %}
 {% endfor %}
