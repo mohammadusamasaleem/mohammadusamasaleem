@@ -65,12 +65,57 @@
         }
     }
 
+    .project-link {
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &,
+        &:link {
+            color: Gray;
+            text-decoration: none;
+        }
+        &:visited {
+            text-decoration: underline;
+        }
+        &:hover {
+            color: Black;
+            text-decoration: underline;
+        }
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .project-link-active {
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &,
+        &:link {
+            color: Black;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    .rev-trigger {
+        clear: both;
+        display: none;
+    }
+
     @include media-query($on-palm) {
         text-align: left;
 
         .trigger {
             clear: both;
             display: none;
+        }
+
+        .rev-trigger {
+            clear: none;
+            display: inherit;
         }
 
         .site-title {
