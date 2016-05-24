@@ -6,6 +6,9 @@ permalink: /projects/
 
 {% for project in site.posts %}
     {% if project.title %}
-        {{ project.url }} <br>
+        {{ project.url }} <br />
+        {% for tag in project.categories %}
+        {{ tag  }} <br />
+        {% endfor %}
     {% endif %}
 {% endfor %}
