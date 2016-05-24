@@ -17,5 +17,7 @@ url: "http://psturmfels.github.io" # the base hostname & protocol for your site
 keep_files: ['_images']
 include: ['_images']
 
+permalink: /projects/:title
+
 # Build settings
 markdown: kramdown
