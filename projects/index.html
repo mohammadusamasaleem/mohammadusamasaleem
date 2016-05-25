@@ -6,7 +6,8 @@ permalink: /projects/
 
 {% for project in site.posts %}
     {% if project.title %}
-    <header class="post-header post-description">
+    {% if project.type == "project" %}
+    <header class="post-header top-border-black">
         <h1 class="post-title" itemprop="name headline">
             <a class="post-link" href="{{ project.url }}">{{ project.title }}</a>
             <p class="post-meta">
@@ -25,5 +26,6 @@ permalink: /projects/
         </p>
         {% endif %}
     </header>
+    {% endif %}
     {% endif %}
 {% endfor %}
