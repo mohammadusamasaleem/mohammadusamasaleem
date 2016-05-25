@@ -6,9 +6,24 @@ permalink: /projects/
 
 {% for project in site.posts %}
     {% if project.title %}
-        {{ project.url }} <br />
-        {% for tag in project.categories %}
-        {{ tag  }} <br />
-        {% endfor %}
+    <header class="post-header post-description">
+        <h1 class="post-title" itemprop="name headline">
+            <a class="post-link" href="{{ project.url }}">{{ project.title }}</a>
+            <p class="post-meta">
+                tags:
+                {% if project.location %}
+                {{ project.location }},
+                {% endif %}
+                {% for tag in project.categories %}
+                {{ tag }}{% unless forloop.last == true %},{% endunless %}
+                {% endfor %}
+            </p>
+        </h1>
+        {% if project.description %}
+        <p>
+            {{ project.description }}
+        </p>
+        {% endif %}
+    </header>
     {% endif %}
 {% endfor %}

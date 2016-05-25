@@ -17,10 +17,34 @@ layout: default
             </p>
         </h1>
     </header>
-
-
-    <div class="post-content" itemprop="articleBody">
-        {{ content }}
+    <div class="post-content" itemprop=articleBody>
+        <p class="post-description">
+            <h3 class="post-title">
+            Overview:
+            </h3>
+            {{ content }}
+        </p>
     </div>
 
+    {% if page.my_role %}
+    <div class="post-content" itemprop=articleBody>
+        <p class="post-description">
+            <h3 class="post-title">
+            My Role:
+            </h3>
+            {{ page.my_role }}
+        </p>
+    </div>
+    {% endif %}
+
+    {% if page.background %}
+    <div class="post-content" itemprop=articleBody>
+        <p class="post-description">
+            <h3 class="post-title">
+            Background:
+            </h3>
+            {{ page.background }}
+        </p>
+    </div>
+    {% endif %}
 </article>

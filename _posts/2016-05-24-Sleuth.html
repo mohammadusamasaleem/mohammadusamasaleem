@@ -6,6 +6,56 @@ location: "UC Berkeley"
 categories: [RNA-Seq, Computational Biology]
 link: http://pachterlab.github.io/sleuth/
 git-link: https://github.com/pachterlab/sleuth
----
+description: >
+    Sleuth is an RNA-seq tool that analyzes quantified reads from
+    <a href="https://pachterlab.github.io/kallisto">Kallisto</a>
+    and can display the analysis in a web browser using
+    <a href="http://shiny.rstudio.com">Shiny by RStudio</a>.
+    It uses Kallisto's bootstrap estimates to implement novel statistical
+    methods for differential analysis. It was developed by the
+    <a href="http://pachterlab.github.io">Pachter Lab</a> at UC Berkeley.
+background: >
+    RNA-Sequencing, or RNA-seq for short, was developed in 2008 and is a
+    type of study that aims, at a high level, to understand gene expression
+    within an organism. RNA-seq is used to analyze the transcriptome,
+    which, unlike the genome, is constantly changing. Among other things, RNA-seq
+    helps us understand what types of conditions can cause cells to express
+    certain genes (differential analysis), and helps us discover new
+    transcripts and explore their purpose.<br /> <br />
 
-This is a post!
+    In an RNA-seq experiment, RNA from an organism is chemically prepared and
+    fed through a sequencer. The sequencer generates "reads" in the millions:
+    each read is a chunk of RNA-molecule that came from the original organism.
+    A computer program, such as <a href="https://pachterlab.github.io/kallisto">Kallisto</a>,
+    is then used to find which genes these reads came from. This process is called
+    loosely called "alignment." The more reads that mapped to a particular gene,
+    the more that gene was being expressed at the time of the sequencing.
+    Due to the sheer volume of data, there are many difficult computational
+    problems involved with RNA-seq alignment, many of which are discussed in the
+    <a href="http://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html">Kallisto Paper</a>.
+    <br /><br />
+
+    After the reads have been aligned, another computer program, such as
+    <a href="http://pachterlab.github.io/sleuth/">Sleuth</a>, is used to
+    determine, statistically speaking, which genes were most
+    <i>differentially expressed</i> across a condition. Whether or not a gene
+    was significantly different across a condition is typically determined by
+    p-value or q-value. 
+
+my_role: >
+
+
+---
+Sleuth is an RNA-seq tool that analyzes quantified reads from
+<a href="https://pachterlab.github.io/kallisto">Kallisto</a>.
+Sleuth is novel both in its use of statistical bootstraps to understand
+differential gene expression, and in its use of
+<a href="http://shiny.rstudio.com">Shiny</a> to provide in-browser, interactive
+analyses of RNA-seq experiments.
+It was developed by the <a href="http://pachterlab.github.io">Pachter Lab</a>
+at UC Berkeley. More about Sleuth can be found at the
+<a href="http://pachterlab.github.io/sleuth/">Sleuth homepage</a>. The
+source code for sleuth is available on Github at the
+<a href="https://github.com/pachterlab/sleuth"><span class="icon icon--github">
+{% include icon-github.svg %}</span><span class="username">Sleuth Repo</span></a>.
+<br /><br />
