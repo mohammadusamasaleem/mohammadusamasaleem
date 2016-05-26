@@ -1,8 +1,8 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+@charset "utf-8";
 
 
 // Our variables
@@ -43,6 +43,15 @@ $on-laptop:        800px;
     }
 }
 
+.speech-bubble {
+    width:550px;
+    height:350px;
+    margin-left: 100px;
+    margin-top: -30px;
+    @include media-query($on-palm) {
+        width: 400px;
+    }
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
