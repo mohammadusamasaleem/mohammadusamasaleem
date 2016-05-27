@@ -25,33 +25,16 @@ layout: default
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 -->
-<div class="row">
-    <img src="/_images/Speech_bubble.png" class="speech-bubble" id="speech">
-    </img>
+<div class="image-wrapper" id="speech-wrapper">
+    <img src="/_images/Speech_bubble.png" class="speech-bubble" id="speech" />
+    <img src="/_images/rightjump2@2x.png" style="margin-left: -20px;" id="mellow"/>
 </div>
 <div class="row">
-    <img src="/_images/rightjump2@2x.png" style="margin-left: -40px;" id="mellow"/>
 </div>
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>
-    var new_width = $(window).width();
-    var new_speech_width = new_width / 3 + 150;
-    var new_speech_left = 200 - new_width / 4 + new_width * new_width / 7000;
-    $("#speech").width(new_speech_width);
-    $("#speech").css("margin-left", new_speech_left);
-    $("#mellow").css("margin-left", new_speech_left * 0.1)
-$(document).ready(function(){
-    $(window).resize(function(){
-        var new_width = $(window).width();
-        var new_speech_width = new_width / 3 + 150;
-        var new_speech_left = 200 - new_width / 4 + new_width * new_width / 7000;
-        $("#speech").width(new_speech_width);
-        $("#speech").css("margin-left", new_speech_left );
-        $("#mellow").css("margin-left", new_speech_left * 0.1)
-    });
-});
 </script>
 </body>
 

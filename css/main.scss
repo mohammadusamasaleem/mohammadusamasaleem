@@ -44,10 +44,28 @@ $on-laptop:        800px;
 }
 
 .speech-bubble {
-    margin-left: 60px;
-    margin-top: -30px;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+    width: 80%;
 }
 
+.image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.image-inner-container {
+    position:fixed;
+    top: 0px;
+}
+
+.image-text {
+   position: absolute;
+   width: 100%;
+   top: 40px;
+   margin: 0 auto;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
