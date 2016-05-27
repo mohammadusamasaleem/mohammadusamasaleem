@@ -31,10 +31,10 @@ layout: default
         <h1 id="image-text">
             Welcome to the <br />
             homepage of Pascal Sturmfels! <br />
-            Learn more
-            <a href="{{ site.basurl }}/about">about me</a>, or check <br />
-            out some of the <a href="{{ site.baseurl }}/projects">projects</a><br />
-            that I am involved in.
+            Learn
+            <a href="{{ site.basurl }}/about">about me</a>, check out some <br />
+            of the <a href="{{ site.baseurl }}/projects">projects</a>
+            I am involved in, <br /> or <a href="#contact-me" onclick="highlight_func()">find me on social media</a>.
         </h1>
     </div>
 
@@ -43,7 +43,14 @@ layout: default
 <div class="row">
 </div>
 </div>
-
+<script>
+function highlight_func() {
+    var effects = ["highlight", "bounce", "shake", "pulsate"];
+    var rand_index = Math.floor((Math.random() * 4));
+    var effect = effects[rand_index];
+    $( "#contact-me" ).effect( effect , "slow" );
+}
+</script>
 <script>
 $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
   $(window).resize(function() {

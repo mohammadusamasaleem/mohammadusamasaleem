@@ -175,6 +175,10 @@
 /**
  * Site footer
  */
+.highlighted {
+    background-color: #ffff99;
+}
+
 .site-footer {
     border-top: 1px solid $grey-color-dark;
     padding: $spacing-unit 0;
