@@ -35,9 +35,9 @@
                     {% if project.title %}
                         {% if project.type == "project" %}
                         {% if page.url == project.url %}
-                        <a class="page-link-active" href="{{ project.url }}">{{project.title}}</a>
+                        <a class="page-link-active" href="{{ project.url | prepend: site.baseurl }}">{{project.title}}</a>
                         {% else %}
-                        <a class="page-link" href="{{ project.url }}">{{project.title}}</a>
+                        <a class="page-link" href="{{ project.url | prepend: site.baseurl }}">{{project.title}}</a>
                         {% endif %}
                         {% endif %}
                     {% endif %}

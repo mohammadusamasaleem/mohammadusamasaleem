@@ -44,10 +44,11 @@ $on-laptop:        800px;
 }
 
 .speech-bubble {
+    position: relative;
     display: block;
     margin: auto;
-    margin-top: -40px;
-    width: 80%;
+    margin-top: -30px;
+    width: 70%;
 }
 
 .image-wrapper {
@@ -55,16 +56,20 @@ $on-laptop:        800px;
     width: 100%;
 }
 
-.image-inner-container {
-    position:fixed;
-    top: 0px;
+.image-text-wrapper {
+     left: 0;
+     position:absolute;
+     display: block;
+     justify-content: center; /* align horizontal */
+     text-align: center;
+     top: 30px;
+     width: 100%;
 }
 
 .image-text {
-   position: absolute;
-   width: 100%;
-   top: 40px;
-   margin: 0 auto;
+    font-family: sans-serif;
+    color: #2C3539;
+    display: block;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)

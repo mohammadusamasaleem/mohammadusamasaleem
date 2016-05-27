@@ -25,16 +25,30 @@ layout: default
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 -->
-<div class="image-wrapper" id="speech-wrapper">
-    <img src="/_images/Speech_bubble.png" class="speech-bubble" id="speech" />
-    <img src="/_images/rightjump2@2x.png" style="margin-left: -20px;" id="mellow"/>
+<div class="image-wrapper">
+    <img src="/_images/Speech_bubble.png" class="speech-bubble"/>
+    <div class="image-text-wrapper" id="image-text-wrapper">
+        <h1 id="image-text">
+            Welcome to the <br />
+            homepage of Pascal Sturmfels! <br />
+            Learn more
+            <a href="{{ site.basurl }}/about">about me</a>, or check <br />
+            out some of the <a href="{{ site.baseurl }}/projects">projects</a><br />
+            that I am involved in.
+        </h1>
+    </div>
+
+    <img src="/_images/rightjump2@2x.png"/>
 </div>
 <div class="row">
 </div>
-
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 <script>
+$("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
+  $(window).resize(function() {
+      $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
+  });
 </script>
 </body>
 
