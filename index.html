@@ -49,11 +49,11 @@ $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
   $(window).resize(function() {
       $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
       $("#image-text").css('margin-top', "0px");
-      if($(window).width() <= 600 ){
-          $("#image-text").css('margin-top', "-5px");
+      if($(window).width() <= 500 ){
+          $("#image-text").css('margin-top', "-13px");
       }
-      else if($(window).width() <= 500 ){
-          $("#image-text").css('margin-top', "-10px");
+      else if($(window).width() <= 600 ){
+          $("#image-text").css('margin-top', "-5px");
       }
   });
 </script>
