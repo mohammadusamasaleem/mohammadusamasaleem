@@ -14,8 +14,8 @@ description: > # this means to ignore newlines until "baseurl:"
   The homepage of Pascal Sturmfels. Origami to Computer Science, and everything in between.
 url: "http://psturmfels.github.io" # the base hostname & protocol for your site
 
-keep_files: ['_images', '_js']
-include: ['_images', '_js']
+keep_files: ['_images', '_js', 'fancybox']
+include: ['_images', '_js', 'fancybox']
 
 permalink: /projects/:title
 
