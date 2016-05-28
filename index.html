@@ -6,19 +6,19 @@ layout: default
 <body>
 
 
-<div class="home">
-    <!--
-    <h1 class="page-heading">Posts</h1>
+    <div class="home">
+        <!--
+        <h1 class="page-heading">Posts</h1>
 
 
-    <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <h2>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-</h2>
+        <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
 </li>
 {% endfor %}
 </ul>
@@ -52,17 +52,26 @@ function highlight_func() {
 }
 </script>
 <script>
-$("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
-  $(window).resize(function() {
-      $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
-      $("#image-text").css('margin-top', "0px");
-      if($(window).width() <= 500 ){
-          $("#image-text").css('margin-top', "-20px");
-      }
-      else if($(window).width() <= 600 ){
-          $("#image-text").css('margin-top', "-5px");
-      }
-  });
+$(document).ready (function() {
+    $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
+    $("#image-text").css('margin-top', "0px");
+    if($(window).width() <= 500 ){
+        $("#image-text").css('margin-top', "-20px");
+    }
+    else if($(window).width() <= 600 ){
+        $("#image-text").css('margin-top', "-5px");
+    }
+    $(window).resize(function() {
+        $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
+        $("#image-text").css('margin-top', "0px");
+        if($(window).width() <= 500 ){
+            $("#image-text").css('margin-top', "-20px");
+        }
+        else if($(window).width() <= 600 ){
+            $("#image-text").css('margin-top', "-5px");
+        }
+    });
+});
 </script>
 </body>
 
