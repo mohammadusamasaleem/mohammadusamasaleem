@@ -24,8 +24,10 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
+$on-mobile:        480px;
 $on-palm:          600px;
 $on-laptop:        800px;
+
 
 
 
@@ -69,6 +71,18 @@ $on-laptop:        800px;
     font-family: sans-serif;
     color: #2C3539;
     display: block;
+}
+
+.cover-image {
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 45%;
+    margin-left: 10px;
+    float: right;
+
+    @include media-query($on-mobile) {
+        width: 100%;
+    }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
