@@ -6,25 +6,7 @@ layout: default
 <body>
 
 
-    <div class="home">
-        <!--
-        <h1 class="page-heading">Posts</h1>
-
-
-        <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-</li>
-{% endfor %}
-</ul>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
--->
+<div class="home">
 <div class="image-wrapper">
     <img src="/_images/Speech_bubble.png" class="speech-bubble"/>
     <div class="image-text-wrapper" id="image-text-wrapper">
@@ -53,6 +35,11 @@ function highlight_func() {
 </script>
 <script>
 $(document).ready (function() {
+    var fonts = ["Arial", "Impact", "Times New Roman", "Comic Sans MS", "Trebuchet MS"]
+    var rand_index = Math.floor((Math.random() * 5));
+    var font = fonts[rand_index];
+    $("#image-text").css('font-family', font);
+
     $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
     $("#image-text").css('margin-top', "0px");
     if($(window).width() <= 500 ){
