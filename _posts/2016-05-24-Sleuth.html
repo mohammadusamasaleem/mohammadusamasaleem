@@ -8,13 +8,12 @@ categories: [RNA-Seq, Computational Biology]
 link: http://pachterlab.github.io/sleuth/
 git-link: https://github.com/pachterlab/sleuth
 description: >
-    Sleuth is an RNA-seq tool that analyzes quantified reads from
-    <a href="https://pachterlab.github.io/kallisto">Kallisto</a>
+    Sleuth is an RNA-seq tool to perform differential expression analysis of quantified reads from
+    <a target="_blank" href="https://pachterlab.github.io/kallisto">kallisto</a>
     and can display the analysis in a web browser using
-    <a href="http://shiny.rstudio.com">Shiny by RStudio</a>.
+    <a target="_blank" href="http://shiny.rstudio.com">Shiny by RStudio</a>.
     It uses Kallisto's bootstrap estimates to implement novel statistical
-    methods for differential analysis. It was developed by the
-    <a href="http://pachterlab.github.io">Pachter Lab</a> at UC Berkeley.
+    methods for differential analysis.
 background: >
     RNA-Sequencing, or RNA-seq for short, was developed in 2008 and is a
     type of study that aims, at a high level, to understand gene expression
@@ -27,23 +26,23 @@ background: >
     In an RNA-seq experiment, RNA from an organism is chemically prepared and
     fed through a sequencer. The sequencer generates "reads" in the millions:
     each read is a chunk of RNA-molecule that came from the original organism.
-    A computer program, such as <a href="https://pachterlab.github.io/kallisto">Kallisto</a>,
+    A computer program, such as <a target="_blank" href="https://pachterlab.github.io/kallisto">Kallisto</a>,
     is then used to find which genes these reads came from. This process is called
     loosely called "alignment." The more reads that mapped to a particular gene,
     the more that gene was being expressed at the time of the sequencing.
     Due to the sheer volume of data, there are many difficult computational
     problems involved with RNA-seq alignment, many of which are discussed in the
-    <a href="http://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html">Kallisto Paper</a>.
+    <a target="_blank" href="http://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html">Kallisto Paper</a>.
     <br /><br />
 
     After the reads have been aligned, another computer program, such as
-    <a href="http://pachterlab.github.io/sleuth/">Sleuth</a>, is used to
+    <a target="_blank" href="http://pachterlab.github.io/sleuth/">Sleuth</a>, is used to
     determine, statistically speaking, which genes were most
     <i>differentially expressed</i> across a condition. Whether or not a gene
     was significantly different across a condition is typically determined by
     p-value or q-value. From these analyses, computational biologists
     draw conclusions about which genes are important to which conditions; an
-    example is <a href="http://www.ncbi.nlm.nih.gov/pubmed/25258427">Sharma et al.</a>,
+    example is <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/25258427">Sharma et al.</a>,
     a paper discussing genes that are important when cells die.
 
     <br /><br />
@@ -53,7 +52,7 @@ background: >
 my_role: >
     My role in this project was twofold. First, I designed several of the data
     visualizations present in the Sleuth live app (see the
-    <a href="http://lair.berkeley.edu/ellahi">example anlysis</a>).
+    <a target="_blank" href="http://lair.berkeley.edu/ellahi">example anlysis</a>).
     I designed the gene table and the gene viewer, which display
     the variation across conditions of given genes. I created the
     transcript heat map plot, which uses a hierarchical clustering algorithm
@@ -74,28 +73,28 @@ my_role: >
     Sleuth to abandon the cumbersome bootstrap data after pre-computation. This effectively
     reduced the size of the analyses objects by orders of magnitude, for the
     first time allowing RNA-seq analyses to shared live in a browser. Before Sleuth, RNA-seq experiments were only available as raw data in the
-    <a href="http://www.ncbi.nlm.nih.gov/sra">Short Read Archive</a> and needed several days and multiple
+    <a target="_blank" href="http://www.ncbi.nlm.nih.gov/sra">Short Read Archive</a> and needed several days and multiple
     cores to re-analyze. <br /> <br />
 
     I am now working on compiling a database of re-analyzed RNA-seq experiments that will
-    shortly be a live webpage. For now, check out the <a href="https://github.com/pachterlab/lair">
+    shortly be a live webpage. For now, check out the <a target="_blank" href="https://github.com/pachterlab/lair">
     Github repo for the database here</a>.
 
 
 ---
-Sleuth is an RNA-seq tool that analyzes quantified reads from
-<a href="https://pachterlab.github.io/kallisto">Kallisto</a>.
+Sleuth is an RNA-seq tool that performs differential expression analysis on quantified reads from
+<a target="_blank" href="https://pachterlab.github.io/kallisto">kallisto</a>.
 Sleuth is novel both in its use of statistical bootstraps to understand
 differential gene expression, and in its use of
-<a href="http://shiny.rstudio.com">Shiny</a> to provide in-browser, interactive
+<a target="_blank" href="http://shiny.rstudio.com">Shiny</a> to provide in-browser, interactive
 analyses of RNA-seq experiments.
-It was developed by the <a href="http://pachterlab.github.io">Pachter Lab</a>
-at UC Berkeley. More about Sleuth can be found at the
-<a href="http://pachterlab.github.io/sleuth/">Sleuth homepage</a>. The
-source code for sleuth is available on Github at the
-<a href="https://github.com/pachterlab/sleuth"><span class="icon icon--github">
-{% include icon-github.svg %}</span><span class="username">Sleuth Repo</span></a>.
-An example analysis done by Sleuth can be found at the
-<a href="http://lair.berkeley.edu/">Bear's Lair</a>.
-
+If you are interested in using sleuth, see the
+<a target="_blank" href="http://pachterlab.github.io/sleuth/">sleuth homepage</a>.
+If you would like to see an example of a live sleuth analysis, see
+<a target="_blank" href="http://lair.berkeley.edu/">the bear's lair</a>.
 <br /><br />
+Sleuth was developed by the <a target="_blank" href="http://pachterlab.github.io">Pachter Lab</a>
+at UC Berkeley.
+The source code for sleuth is available on Github at the
+<a target="_blank" href="https://github.com/pachterlab/sleuth"><span class="icon icon--github">
+{% include icon-github.svg %}</span><span class="username">Sleuth Repo</span></a>.
