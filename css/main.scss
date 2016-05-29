@@ -85,6 +85,13 @@ $on-laptop:        800px;
     }
 }
 
+.iphone-screenshot {
+    margin: 0 auto;
+    width: 45%;
+    border-radius: 7%;
+    border: 2px solid black;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
