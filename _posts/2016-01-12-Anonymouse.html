@@ -1,0 +1,78 @@
+---
+layout: post
+type: project
+title: "Anonymouse"
+date:   2016-01-12 2:35PM
+categories: [iOS, Peer-to-Peer, Censorship-Resistant Communication]
+link: https://github.com/psturmfels/ios-team
+git-link: https://github.com/psturmfels/ios-team
+description: >
+    Anonymouse is a peer-to-peer microblogging app for the iPhone. It is designed
+    to provide local and anonymous communication that is censorship and
+    network-blogging resistant – it does so by leveraging an ad-hoc network
+    implemented with the Multipeer Connectivity framework built into the iPhone.
+
+background: >
+    The idea behind this app comes from
+    <a href="https://www.davidbild.org/publications/bild14apr.pdf">David Bild's Thesis</a>;
+    David Bild was a graduate student at the University of Michigan who's advisor,
+    <a href="http://robertdick.org">Robert Dick</a>, is Anonymouse's faculty
+    sponsor. The central idea was to provide people with a way to communicate,
+    even if another party was attempting to block their communication.
+    The spread rate of a messages in a delay-tolerant ad-hoc network, even
+    when parts of that network are being blocked, is discussed in the the thesis above.
+    <br /><br />
+
+    The essential idea of the app is this: since all phones are Wi-Fi
+    emitters and receivers, why do they need a middle man (e.g a cell provided)
+    to communicate with each other? The problem is that a phones emitting range is
+    quite limited, to ~100 meters, and it would be somewhat useless if you could
+    only communicate with people in a 100-meter range. But what if, by
+    "bouncing" messages across intermediate senders, you could extend the range
+    of your own communication? A delay tolerant network treats everyone in the network
+    as a potential node to send and receive messages – as long as the network is dense
+    enough, messages will always be able to find a path between any two people.
+    <br /><br />
+
+    Our app uses the above concept to spread mesages without cellular service.
+    Since the network does not rely on chokepoints which are easily controlled or
+    blocked by authorities, it also is censorship resistant.
+
+
+my_role: >
+    I was the primary iOS developer for this app. I designed the communications protocol
+    for the app – that is, I designed how many nearby phones communicate with each other
+    to maximize the spread of messages. The specifics of the protocol can be found on
+    our Github page, but essentially it utilizes a hashing algorithm to determine
+    which phones to communicate to, and a prioritizing algorithm
+    to determine which messages to send first. More information about the
+    algorithms behind the app can be found in the
+    <a target="_blank" href="http://1am-networks.org/documents.html">publications tab</a> of
+    the Anonymouse website.
+
+---
+
+Anonymouse is a peer-to-peer microblogging app for the iPhone. It is designed
+to provide local and anonymous communication that is censorship and
+network-blogging resistant – it does so by leveraging an ad-hoc network
+implemented with the Multipeer Connectivity framework built into the iPhone.
+Since it leverages peer-to-peer wifi, the app can communicate other, nearby phones
+<i>without wifi, cellular service,
+or any infrastructure networks</i>.
+You can check out the
+<a target="_blank" href="http://1am-networks.org/index.html">Anonymouse homepage</a>
+for more information
+or the <a target="_blank" href="https://github.com/psturmfels/ios-team"><span class="icon icon--github">
+{% include icon-github.svg %}</span><span class="username">Anonymouse repo</span></a>
+for the source code.
+<br /><br />
+
+The app has two main purposes. Its first purpose is as a local social-media
+app that works without network service. Its second purpose is to serve as a way to
+spread delay-tolerant messages in places where networks are being blocked or censored,
+or where natural disasters have wiped out infrastructure network towers.
+<br /><br />
+
+This app is an ongoing project – it is scheduled to release in December 2016 -
+and is sponsored by the University of Michigan's
+<a href="http://mdp.engin.umich.edu">Multidisciplinary Design Program</a>.
