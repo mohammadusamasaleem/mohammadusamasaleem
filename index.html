@@ -1,65 +1,30 @@
 ---
-layout: default
+layout: page
 ---
 <html>
-
 <body>
-
-
-<div class="home">
-<div class="image-wrapper">
-    <img src="/_images/Speech_bubble.png" class="speech-bubble"/>
-    <div class="image-text-wrapper" id="image-text-wrapper">
-        <h1 id="image-text">
-            Welcome to the <br />
-            homepage of Pascal Sturmfels! <br />
-            Learn
-            <a href="{{ site.basurl }}/about">about me</a>, check out some <br />
-            of the <a href="{{ site.baseurl }}/projects">projects</a>
-            I am involved in, <br /> or <a href="#contact-me" onclick="highlight_func()">find me on social media</a>.
-        </h1>
-    </div>
-
-    <img src="/_images/rightjump2@2x.png"/>
-</div>
-<div class="row">
-</div>
-</div>
-<script>
-function highlight_func() {
-    var effects = ["highlight", "bounce", "shake", "pulsate"];
-    var rand_index = Math.floor((Math.random() * 4));
-    var effect = effects[rand_index];
-    $( "#contact-me" ).effect( effect , "slow" );
-}
-</script>
-<script>
-$(document).ready (function() {
-    var fonts = ["Arial", "Impact", "Times New Roman", "Comic Sans MS", "Trebuchet MS"]
-    var rand_index = Math.floor((Math.random() * 5));
-    var font = fonts[rand_index];
-    $("#image-text").css('font-family', font);
-
-    $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
-    $("#image-text").css('margin-top', "0px");
-    if($(window).width() <= 500 ){
-        $("#image-text").css('margin-top', "-20px");
-    }
-    else if($(window).width() <= 600 ){
-        $("#image-text").css('margin-top', "-5px");
-    }
-    $(window).resize(function() {
-        $("#image-text").css('font-size', $("#image-text-wrapper").width() / 25 + "px");
-        $("#image-text").css('margin-top', "0px");
-        if($(window).width() <= 500 ){
-            $("#image-text").css('margin-top', "-20px");
-        }
-        else if($(window).width() <= 600 ){
-            $("#image-text").css('margin-top', "-5px");
-        }
-    });
-});
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 </script>
 </body>
-
 </html>
+
+<p>
+    <a class="fancybox" href="{{ site.baseurl }}/_images/pascal_cover.jpg"><img class="cover-image" src="{{ site.baseurl }}/_images/pascal_cover_small.jpg" alt="" /></a>
+    My name is Pascal Sturmfels, and I'm an undergraduate studying computer science
+    and mathematics at the University of Michigan. My areas of research include
+    computational biology, mobile communications technology, and graph theory.
+    <br /> <br />
+
+    Outside of academics, I enjoy <a href="https://youtu.be/w8CNzMP0JH8" target="_blank">playing the piano</a>,
+    <a target="_blank" href="https://www.facebook.com/media/set/?set=a.10204558778809020.1073741830.1820191280&type=1&l=a3a90c2530">
+    folding origami</a>, running and reading. I also develop iPhone games.
+
+    <br /> <br />
+    At Michigan, I'm on the executive board of the professional technology fraternity
+    <a target="_blank" href="http://kappathetapi.com">Kappa Theta Pi</a>. I manage
+    all of our technological projects, including giving tech-talks and rebuilding
+    our defunct website (I am aware of the sorry state of our current one).
+</p>
