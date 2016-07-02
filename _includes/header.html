@@ -1,49 +1,42 @@
-<header class="site-header">
-
-    <nav class="navbar navbar-inverse site-nav">
-        <div class="container">
-            <h2 class="site-title">{{ site.title }}</h2>
-            <div class="trigger">
-
-            </div>
-            {% if page.url == "/" %}
-            <a class="page-link-active" href="/{{ site.baseurl }}">Home</a>
-            {% else %}
-            <a class="page-link" href="/{{ site.baseurl }}">Home</a>
-            {% endif %}
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            {% if my_page.url == "/projects/" %}
-                {% if page.url contains "/projects/" %}
-                <a class="page-link-active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}:</a>
-                {% else %}
-                <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-                {% endif %}
-            {% else %}
-            {% if page.url == my_page.url %}
-            <a class="page-link-active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% else %}
-            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-            {% if page.url contains "/projects/" %}
-                <div class="rev-trigger">
+<header>
+    <div class="site-nav-container">
+        <nav class="navbar navbar-default navbar-fixed-top site-header">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/{{ site.baseurl}}">{{ site.title }}</a>
                 </div>
-                {% for project in site.posts %}
-                    {% if project.title %}
-                        {% if project.type == "project" %}
-                        {% if page.url == project.url %}
-                        <a class="page-link-active" href="{{ project.url | prepend: site.baseurl }}">{{project.title}}</a>
-                        {% else %}
-                        <a class="page-link" href="{{ project.url | prepend: site.baseurl }}">{{project.title}}</a>
-                        {% endif %}
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-        </div>
-    </nav>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        {% if page.url == "/" %}
+                        <li class="active"><a href="/{{ site.baseurl }}">
+                            Home
+                        </a><span class="sr-only">(current)</span></a></li>
+                        {% else %}
+                        <li><a href="/{{ site.baseurl }}">Home</a></li>
+                        {% endif %}
+                        {% for my_page in site.pages %}
+                        {% if my_page.title %}
+                        {% if page.url == my_page.url %}
+                        <li class="active"><a href="{{ my_page.url | site.baseurl }}">
+                            {{ my_page.title }}
+                        </a><span class="sr-only">(current)</span></a></li>
+                        {% else %}
+                        <li><a href="{{ my_page.url | site.baseurl }}">{{ my_page.title }}</a></li>
+                        {% endif %}
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
 </header>
