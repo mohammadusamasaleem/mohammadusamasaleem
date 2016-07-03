@@ -46,6 +46,12 @@
 .social-media-list {
     list-style: none;
     min-width: 200px;
+    a:link, a:visited {
+        color: #800517;
+    }
+    a:hover, a:active {
+        color: black;
+    }
 }
 
 .footer-col-wrapper {
