@@ -1,0 +1,65 @@
+---
+layout: post
+type: project
+title: "Concurrent Open Shop Scheduling"
+date:   2016-09-10 2:46PM
+location: "University of Maryland"
+categories: [Optimization, Approximation Algorithms]
+link: https://github.com/psturmfels/online_COS
+git-link: https://github.com/psturmfels/online_COS
+description: >
+    Concurrent open shop scheduling is an NP-hard problem that has applications
+    in industrial manufacturing and cloud computing. My research group and I
+    improved the best-known approximation algorithms for the problem, and
+    tested our algorithms on both randomized data and data from Facebook
+    trace.
+background: >
+    Concurrent open shop is a problem in scheduling theory. It is relevant to
+    grid computing and cloud computing, as well as industrial manufacturing.
+    Due to its close relationship with the co-flow problem, it is relevant
+    to distributed computing frameworks like MapReduce. <br /><br />
+
+    The formal description of the problem is as follows:
+    You are given M machines and N jobs. Each job j has a non-negative
+    processing time pij on machine i, 1 <= j <= N, 1 <= i <= M.
+    Each job also has a weight wj. Job j's completion time Cj is defined as the
+    time at which all processing requirements of job j have been met.
+    The objective is to minimize sum(wj*Cj), the sum of weighted completion
+    times of the jobs.<br /><br />
+
+    There are several variants on the problem. One variant is concurrent
+    open shop with release times: each job also has a non-negative release time
+    rj. No part of job j can be processed before its release time.<br /><br />
+
+    The variant considered here is the online version of concurrent open shop:
+    as opposed to knowing each job in advance, jobs arrive over time, and the
+    details of each job become known once they arrive.<br /><br />
+
+    The problem is described in more detail by the paper
+    <a target="_blank" href="http://www.cse.iitd.ernet.in/%7Epandit/sched.pdf">
+    Order Scheduling Models: Hardness and Algorithms.</a>
+
+my_role: >
+    I developed a 10-approximation algorithm for the online concurrent
+    open shop problem, from the previously best-known 16-approximation algorithm.
+    My results were sufficiently general to extend to other scheduling environments,
+    and I used this to develop a 12-approximation algorithm for the online
+    coflow problem – the first online coflow approximation algorithm. <br /><br />
+
+    I also analyzed my new algorithm against several other heuristics, including
+    a simple greedy algorithm, to show that the new algorithm does well in practice.
+    You can find my experiemental work <a target="_blank" href="https://github.com/psturmfels/online_COS">here</a>.
+---
+As part of the <a target="_blank" href="http://www.cs.umd.edu/projects/reucaar/index.html">REU CAAR</a>
+program at the University of Maryland, I worked with three other undergraduate students
+to improve the best-known algorithm for concurrent open shop. We successfully
+did so in the online setting, and are currently working on a manuscript containing
+our results. <br /><br />
+
+We developed a more general framework for online scheduling algorithms, which
+we used not only for concurrent open shop but also for the coflow scheduling problem,
+for which we developed the first online algorithms. These results, along
+with our experimental analysis, are still in progress, and are expected to be
+in the arXiv by January 2017. <br /><br />
+
+We were supervised by Samir Khuller, the department chair of the CS department.
