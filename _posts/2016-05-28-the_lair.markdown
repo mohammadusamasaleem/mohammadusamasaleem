@@ -1,0 +1,46 @@
+---
+title: "The Lair"
+date:   2016-05-28 7:25AM
+location: "UC Berkeley"
+tags: [RNA-Seq, comp-bio]
+description: >
+    <a target="_blank" href="http://pachterlab.github.io/lair/">The Lair</a> is a website
+    that hosts interactive reanalyses of publicly available RNA-seq data. The
+    analyses are automatically run by a back-end Snakemake buildsystem and
+    performed by kallisto and sleuth. This work was published in
+    <a target="_blank" href="http://dx.doi.org/10.1186/s12859-016-1357-2"> an article
+    in BMC Bioinformatics</a>.
+    The website promotes verifiability of RNA-seq experiements.
+
+---
+[![Sleuth](http://pachterlab.github.io/lair/_images/bears_lair_compress.jpg)](http://pachterlab.github.io/lair){:style="float: left; margin-right: 20px; margin-top: 7px; width: 180px;"}
+Reproducibility is critical to experimental results. To this end, many
+RNA-seq papers archive their data in the Sequence Read Archive. This data is theoretically
+enough to reproduce the results of the original paper; doing so is intractable
+due to the computational power required to process the results and the computational
+biology background needed to select the right computational tools.
+
+[The Lair][lair] is a system and website that the [Pachter Lab][lab] and I made to address this problem:
+It hosts interactive re-analyses of publicly available RNA-seq data.
+The development of this system work was published in
+[an article in BMC Bioinformatics][pub].
+
+The reason the Lair is so powerful is that the re-analyses of papers are performed automatically
+by a back-end [Snakemake][snake] build-system that uses [kallisto][kallisto] and [sleuth][sleuth].
+The website allows anyone to inspect the results of RNA-seq experiments without
+needing computing power or extensive knowledge of alignment/analysis tools.
+
+You can take a look at the [Lair repo][repo]
+to see the source for the website. I designed the website, as well as
+the majority of the back-end system behind it.
+
+The workflow of the back-end system is diagramed below:
+![Lair Workflow](/images/workflow.png)
+
+[lair]: http://pachterlab.github.io/lair/
+[pub]: http://dx.doi.org/10.1186/s12859-016-1357-2
+[lab]: http://pachterlab.github.io
+[sleuth]: http://pachterlab.github.io/sleuth/
+[snake]: https://bitbucket.org/snakemake/snakemake/wiki/Home
+[kallisto]: https://pachterlab.github.io/kallisto
+[repo]: https://github.com/pachterlab/lair

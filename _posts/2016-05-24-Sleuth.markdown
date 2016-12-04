@@ -1,0 +1,45 @@
+---
+title: "Sleuth"
+date:   2016-05-24 2:35PM
+tags: [RNA-Seq, comp-bio]
+description: >
+    Sleuth is an RNA-seq tool to perform differential expression analysis of quantified reads from
+    kallisto
+    and can display the analysis in a web browser using
+    Shiny by RStudio.
+    It uses kallisto's bootstrap estimates to implement novel statistical
+    methods for differential analysis.
+---
+[![Sleuth](http://pachterlab.github.io/sleuth/sleuth.jpg)](http://pachterlab.github.io/sleuth){:style="float: left; margin-right: 20px; margin-top: 7px; width: 160px;"}
+Sleuth is an `RNA-seq` tool that performs differential expression analysis on quantified reads from
+[kallisto][kallisto].
+Sleuth is novel both in its use of statistical bootstraps to understand
+differential gene expression, and in its use of
+[Shiny][shiny] to provide in-browser, interactive
+analyses of RNA-seq experiments.
+If you are interested in using sleuth, see the
+[sleuth homepage][sleuth]
+If you would like to see an example of a live sleuth analysis, see
+[the Lair][lair].
+
+RNA-Sequencing, or `RNA-seq` for short, is a
+type of study that aims, at a high level, to understand gene expression
+within an organism. `RNA-seq` is used to analyze the `transcriptome`: the parts
+of the genome that are being expressed by each cell. Unlike the genome,
+the `transcriptome` is constantly changing and varies depending on which cell you look at.
+
+RNA-seq helps us understand how environmental factors impact our `transcriptome`.
+A better understanding of our `transcriptome` may help us develop cures or treatments for diseases and medical conditions
+that currently have no tractable cure.
+
+My role in this project was twofold: I designed several of the data
+visualizations present in the Sleuth live app, and I made it possible for high-volume Sleuth objects to be shared online.
+
+Sleuth was developed by the [Pachter Lab][lab]
+at UC Berkeley.
+
+[kallisto]: https://pachterlab.github.io/kallisto
+[shiny]: http://shiny.rstudio.com
+[sleuth]: http://pachterlab.github.io/sleuth/
+[lair]: http://lair.berkeley.edu/
+[lab]: http://pachterlab.github.io

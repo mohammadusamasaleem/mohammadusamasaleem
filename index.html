@@ -1,30 +1,24 @@
 ---
-layout: page
+layout: default
 ---
-<html>
-<body>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-</script>
-</body>
-</html>
 
-<p>
-    <a class="fancybox" href="{{ site.baseurl }}/_images/pascal_cover.jpg"><img class="cover-image" src="{{ site.baseurl }}/_images/pascal_cover_small.jpg" alt="" /></a>
-    My name is Pascal Sturmfels, and I'm an undergraduate studying computer science
-    and mathematics at the University of Michigan. My areas of research include
-    computational biology, mobile communications technology, and graph theory.
-    <br /> <br />
+<div class="main-post-list">
 
-    Outside of academics, I enjoy <a href="https://youtu.be/w8CNzMP0JH8" target="_blank">playing the piano</a>,
-    <a target="_blank" href="https://www.facebook.com/media/set/?set=a.10204558778809020.1073741830.1820191280&type=1&l=a3a90c2530">
-    folding origami</a>, running and reading. I also develop iPhone games.
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.description | remove: '<p>' | remove: '</p>' }}</p>
+        <div class="post-list__meta"><span class="post-meta__tags">tags: {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
+        {% unless forloop.last %}
+          <hr class="post-list__divider">
+        {% endunless %}
+      </li>
+    {% endfor %}
+  </ol>
 
-    <br /> <br />
-    At Michigan, I'm on the executive board of the professional technology fraternity
-    <a target="_blank" href="http://kappathetapi.com">Kappa Theta Pi</a>. I manage
-    all of our technological projects, including giving tech-talks and rebuilding
-    our defunct website (I am aware of the sorry state of our current one).
-</p>
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
+  {% endif %}
+
+</div>

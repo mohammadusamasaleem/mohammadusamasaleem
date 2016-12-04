@@ -1,38 +1,6 @@
-<footer class="site-footer">
-
-    <div class="container-fluid wrapper">
-        <div class="row footer-col-wrapper">
-        <div class="col-md-4 col-xs-5">
-            <div id="contact-me">
-                <ul class="social-media-list">
-                    {% if site.github_username %}
-                    <li>
-                        {% include icon-github.html username=site.github_username %}
-                    </li>
-                    {% endif %}
-
-                    {% if site.linkedin_username %}
-                    <li>
-                        {% include icon-linkedin.html username=site.linkedin_username %}
-                    </li>
-                    {% endif%}
-
-                    <li>
-                        {% include icon-facebook.html username=site.title%}
-                    </li>
-
-                    {% if site.twitter_username %}
-                    <li>
-                        {% include icon-twitter.html username=site.twitter_username %}
-                    </li>
-                    {% endif %}
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-8 col-xs-7">
-            <p>{{ site.description }}</p>
-        </div>
-    </div>
-    </div>
+<footer class="footer">
 
 </footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
