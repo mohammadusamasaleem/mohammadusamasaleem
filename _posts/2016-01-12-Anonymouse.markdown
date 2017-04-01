@@ -28,7 +28,7 @@ spread delay-tolerant messages in places where networks are being blocked or cen
 or where natural disasters have wiped out infrastructure network towers.
 
 When I was working on this project, I was the primary iOS developer. I designed
-the app's interface and functionality, from the `persistent storgae` support to the `connection protocols`.
+the app's interface and functionality, from the `persistent storage` support to the `connection protocols`.
 
 Although I am no longer a part of this project, it is ongoing; the app is still in development.
 It is sponsored by the University of Michigan's [Multidisciplinary Design Program][mdp].
