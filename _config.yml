@@ -1,7 +1,7 @@
 # Site settings
 title: Pascal Sturmfels
 description: 'Studying computer science at University of Michigan; interests include
-theory of algorithms, natural language processing, and iOS development.'
+machine learning in medicine, approximation algorithms, and iOS development.'
 
 url: 'http://psturmfels.github.io'
 baseurl: "/"
