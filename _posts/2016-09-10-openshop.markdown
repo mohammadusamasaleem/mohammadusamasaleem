@@ -17,7 +17,7 @@ such that the jobs are completed in the most efficient manner [[^1]].
 As part of the [REU CAAR][car]
 program at the University of Maryland, I worked with three other undergraduate students
 to improve the best-known algorithm for concurrent open shop, which is a type of scheduling problem.
-We successfully did so in the online setting, and have submitted a manuscript containing our results.
+We successfully did so in the online setting. Our work is available on [the arXiv][arxiv].
 
 We developed a more general framework for online scheduling algorithms, which
 we used not only for concurrent open shop but also coflow scheduling and
@@ -32,3 +32,4 @@ We presented the following poster of our work at a symposium hosted by the Natio
 
 [car]: http://www.cs.umd.edu/projects/reucaar/index.html
 [schedule]: https://en.wikipedia.org/wiki/Job_shop_scheduling
+[arxiv]: https://arxiv.org/abs/1704.06677
