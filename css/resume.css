@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
+ * Start Bootstrap - Resume v4.0.0 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
@@ -13,12 +13,7 @@ body {
     padding-top: 0;
     padding-left: 17rem; } }
 
-h1 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000; }
-
+h1,
 h2,
 h3,
 h4,
@@ -45,14 +40,14 @@ h2 {
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #17a2b8; }
+    color: #680000; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #17a2b8; }
+    color: #680000; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -109,14 +104,12 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  /*background-color: $primary !important;*/
-  background: linear-gradient(to bottom right, #20c997 0%, #17a2b8 100%); }
+  background-color: #680000 !important; }
 
 .text-primary {
-  color: #20c997 !important;
-  /*color: $primary !important;*/ }
+  color: #dc3545 !important; }
 
 a {
-  color: #17a2b8; }
+  color: #dc3545; }
   a:hover, a:focus, a:active {
-    color: #0f6674; }
+    color: #a71d2a; }

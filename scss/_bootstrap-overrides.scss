@@ -1,18 +1,16 @@
 .bg-primary {
-  /*background-color: $primary !important;*/
-  background: linear-gradient(to bottom right, $teal 0%, $cyan 100%);
+  background-color: $primary !important;
 }
 
 .text-primary {
-  color: $teal !important;
-  /*color: $primary !important;*/
+  color: $highlights !important;
 }
 
 a {
-  color: $primary;
+  color: $highlights;
   &:hover,
   &:focus,
   &:active {
-    color: darken($primary, 15%);
+    color: darken($highlights, 15%);
   }
 }
