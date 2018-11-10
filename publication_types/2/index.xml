@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Pascal Sturmfels</title>
+    <link>http://psturmfels.github.io/publication_types/2/</link>
+    <description>Recent content in 2 on Pascal Sturmfels</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="http://psturmfels.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Domain Guided CNN Architecture for Predicting Age from Structural Brain Images</title>
+      <link>http://psturmfels.github.io/publication/sturmfels2018domain/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
+      
+      <guid>http://psturmfels.github.io/publication/sturmfels2018domain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Lair: a resource for exploratory analysis of published RNA-Seq data</title>
+      <link>http://psturmfels.github.io/publication/pimentel2016lair/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0800</pubDate>
+      
+      <guid>http://psturmfels.github.io/publication/pimentel2016lair/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
