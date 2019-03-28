@@ -36,7 +36,7 @@
       <pubDate>Sun, 04 Nov 2018 00:00:00 -0700</pubDate>
       
       <guid>http://psturmfels.github.io/home/about/</guid>
-      <description>Biography I am currently a PhD student at the University of Washington. I am currently interested in novel methods for discovering biomarkers in high-dimensional genetic expression data.
+      <description>Biography I am currently a PhD student at the University of Washington, advised by Su In Lee. I am interested in developing methods to make machine learning models more interpretable, and applying such methods to understand biological and health data.
 My previous research includes developing novel architectures for convolutional neural networks applied to structural brain images and approximation algorithms for NP-hard scheduling problems.</description>
     </item>
     
@@ -104,7 +104,7 @@ My previous research includes developing novel architectures for convolutional n
     </item>
     
     <item>
-      <title>Projects</title>
+      <title>Game Dev</title>
       <link>http://psturmfels.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
