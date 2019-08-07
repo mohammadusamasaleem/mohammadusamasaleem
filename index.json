@@ -1,6 +1,31 @@
 [
   {
     "authors": [
+      "Gabriel Erion",
+      "Joseph D Janizek",
+      "Pascal Sturmfels",
+      "Scott Lundberg",
+      "Su-In Lee"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1559372400,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1559372400,
+    "objectID": "55a7412b83cdca850672022ef0c72dbe",
+    "permalink": "http://psturmfels.github.io/publication/erion2019learning/",
+    "publishdate": "2019-06-01T00:00:00-07:00",
+    "relpermalink": "/publication/erion2019learning/",
+    "section": "publication",
+    "summary": "",
+    "tags": null,
+    "title": "Learning Explainable Models Using Attribution Priors",
+    "type": "publication"
+  },
+  {
+    "authors": [
       "Saige Rutherford",
       "Pascal Sturmfels",
       "Mike Angstadt",
@@ -31,7 +56,7 @@
   {
     "authors": null,
     "categories": null,
-    "content": " Tegulo is a zen, mobile puzzle game made in Unity. The goal of each level is to match the target pattern by flipping over as few tiles as possible, with a catch: flipping over a tile also flips over adjacent tiles of the same color. Tegulo is currently in progress.\n ",
+    "content": " Tegulo is a zen, mobile puzzle game made in Unity. The goal of each level is to match the target pattern by flipping over as few tiles as possible, with a catch: flipping over a tile also flips over adjacent tiles of the same color.    ",
     "date": 1541397655,
     "expirydate": -62135596800,
     "kind": "page",
