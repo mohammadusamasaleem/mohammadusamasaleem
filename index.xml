@@ -5,12 +5,30 @@
     <link>https://psturmfels.github.io/</link>
       <atom:link href="https://psturmfels.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Pascal Sturmfels</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 24 Feb 2020 17:28:11 -0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Pascal Sturmfels</title>
       <link>https://psturmfels.github.io/</link>
     </image>
+    
+    <item>
+      <title>Path Explanations</title>
+      <link>https://psturmfels.github.io/project/path_explain/</link>
+      <pubDate>Mon, 24 Feb 2020 17:16:47 -0800</pubDate>
+      <guid>https://psturmfels.github.io/project/path_explain/</guid>
+      <description>&lt;p&gt;A GitHub package to explain not only which features are most important to a neural network prediction, but also how those features interact with each other.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Attribution Priors</title>
+      <link>https://psturmfels.github.io/project/attribution_priors/</link>
+      <pubDate>Mon, 24 Feb 2020 17:28:11 -0800</pubDate>
+      <guid>https://psturmfels.github.io/project/attribution_priors/</guid>
+      <description>&lt;p&gt;A GitHub package to regularize a neural network&amp;rsquo;s feature attributions during training in order to encode human-level prior knowledge into the training process.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Explaining Explanations: Axiomatic Feature Interactions for Deep Networks</title>
