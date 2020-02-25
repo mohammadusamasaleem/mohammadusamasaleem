@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lior Pachter | Pascal Sturmfels</title>
+    <link>https://psturmfels.github.io/authors/lior-pachter/</link>
+      <atom:link href="https://psturmfels.github.io/authors/lior-pachter/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lior Pachter</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Lior Pachter</title>
+      <link>https://psturmfels.github.io/authors/lior-pachter/</link>
+    </image>
+    
+    <item>
+      <title>The Lair: a resource for exploratory analysis of published RNA-Seq data</title>
+      <link>https://psturmfels.github.io/publication/pimentel-2016-lair/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://psturmfels.github.io/publication/pimentel-2016-lair/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
