@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nazneen Fatema Rajani | Pascal Sturmfels</title>
+    <link>https://psturmfels.github.io/authors/nazneen-fatema-rajani/</link>
+      <atom:link href="https://psturmfels.github.io/authors/nazneen-fatema-rajani/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nazneen Fatema Rajani</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Nazneen Fatema Rajani</title>
+      <link>https://psturmfels.github.io/authors/nazneen-fatema-rajani/</link>
+    </image>
+    
+    <item>
+      <title>Profile Prediction: An Alignment-Based Pre-Training Task for Protein Sequence Models</title>
+      <link>https://psturmfels.github.io/publication/sturmfels-2020-profile/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://psturmfels.github.io/publication/sturmfels-2020-profile/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phillip L. De Jager | Pascal Sturmfels</title>
+    <link>https://psturmfels.github.io/authors/phillip-l.-de-jager/</link>
+      <atom:link href="https://psturmfels.github.io/authors/phillip-l.-de-jager/index.xml" rel="self" type="application/rss+xml" />
+    <description>Phillip L. De Jager</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Phillip L. De Jager</title>
+      <link>https://psturmfels.github.io/authors/phillip-l.-de-jager/</link>
+    </image>
+    
+    <item>
+      <title>Unified AI framework to uncover deep interrelationships between gene expression and Alzheimer&#39;s disease neuropathologies</title>
+      <link>https://psturmfels.github.io/publication/beebe-2020-unified/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://psturmfels.github.io/publication/beebe-2020-unified/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
     <link>https://psturmfels.github.io/authors/joseph-d-janizek/</link>
       <atom:link href="https://psturmfels.github.io/authors/joseph-d-janizek/index.xml" rel="self" type="application/rss+xml" />
     <description>Joseph D Janizek*</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Joseph D Janizek*</title>
@@ -14,17 +14,17 @@
     
     <item>
       <title>Explaining Explanations: Axiomatic Feature Interactions for Deep Networks</title>
-      <link>https://psturmfels.github.io/publication/janizek-2020-explaining/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://psturmfels.github.io/publication/janizek-2020-explaining/</guid>
+      <link>https://psturmfels.github.io/publication/janizek-2021-explaining/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://psturmfels.github.io/publication/janizek-2021-explaining/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Learning explainable models using attribution priors</title>
-      <link>https://psturmfels.github.io/publication/erion-2019-learning/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://psturmfels.github.io/publication/erion-2019-learning/</guid>
+      <title>Improving performance of deep learning models with axiomatic attribution priors and expected gradients</title>
+      <link>https://psturmfels.github.io/publication/erion-2021-improving/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://psturmfels.github.io/publication/erion-2021-improving/</guid>
       <description></description>
     </item>
     
